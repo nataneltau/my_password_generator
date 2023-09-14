@@ -24,6 +24,7 @@ def main():
     pas_gen1.filter_words_by_length(min_len, max_len)
     pas_gen1.mix_list()
     random_elements = pas_gen1.get_random_str_with_special_char_and_case(upper_case, num_of_words, special_char)
+    random_elements = pas_gen1.add_numbers_to_pass(random_elements)
     print("Random elements:", random_elements)
 
     write_to_file = input("Do you want to save the password to a file? (y/n): ")

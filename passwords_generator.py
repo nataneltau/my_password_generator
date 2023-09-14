@@ -71,6 +71,14 @@ class SaferPasswordsGenerator:
 
         self.word_list = words_list_filtered
 
+
+    def add_numbers_to_pass(self, password: str) -> str:
+
+        char_num = len(password)
+        password += str(char_num)
+        return password
+    
+
     
 
     
